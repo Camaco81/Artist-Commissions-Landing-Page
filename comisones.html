@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comisiones Abiertas | Camaco81</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Fondo Animado -->
+    <div class="animated-bg"></div>
+
+    <!-- Selector de Idioma -->
+    <div class="language-selector">
+        <i class="fas fa-globe"></i>
+        <select id="languageSelect" onchange="changeLanguage()">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="pt">Português</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="ja">日本語</option>
+        </select>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section" id="inicio">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-translate="hero.title">¡COMISIONES ABIERTAS!</h1>
+                    <p class="hero-subtitle" data-translate="hero.subtitle">
+                        Anime, Cartoon y Estilizado. Convierto tu idea en una realidad digital única.
+                    </p>
+                    <div class="hero-image-container">
+                        <img src="img/chica-navideña.png" alt="Ilustración Destacada">
+                    </div>
+                    <a href="#precios" class="cta-button">
+                        <i class="fas fa-palette"></i>
+                        <span data-translate="hero.cta">Ver Precios y Encargar</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="precios">
+            <div class="container">
+                <h2 class="section-title" data-translate="pricing.title">Tabla de Precios y Estilos</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Chibi Icon -->
+                    <div class="col">
+                        <div class="pricing-card">
+                            <h3 data-translate="pricing.chibi.name">Chibi Icon / Avatar</h3>
+                            <div class="price">$15</div>
+                            <p class="description" data-translate="pricing.chibi.desc">
+                                Opción económica y rápida. Cabeza grande y estilo tierno (Chibi) para iconos de redes.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.chibi.feat1">Dimensiones cuadradas</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.chibi.feat2">Color plano</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.chibi.feat3">Perfecto para redes</span></li>
+                            </ul>
+                            <a href="https://wa.me/+584165227711" class="order-button">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-translate="pricing.order">¡Encargar!</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Rostro / Busto -->
+                    <div class="col">
+                        <div class="pricing-card">
+                            <h3 data-translate="pricing.bust.name">Rostro / Busto</h3>
+                            <div class="price">$35</div>
+                            <p class="description" data-translate="pricing.bust.desc">
+                                Estilo detallado (Anime/Estilizado). Cabeza y hombros con sombreado y luces.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.bust.feat1">Alta Resolución</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.bust.feat2">Fondo simple/color</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.bust.feat3">1 Revisión de Boceto</span></li>
+                            </ul>
+                            <a href="https://wa.me/+584165227711" class="order-button">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-translate="pricing.order">¡Encargar!</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Torso / Medio Cuerpo -->
+                    <div class="col">
+                        <div class="pricing-card">
+                            <h3 data-translate="pricing.halfbody.name">Torso / Medio Cuerpo</h3>
+                            <div class="price">$60</div>
+                            <p class="description" data-translate="pricing.halfbody.desc">
+                                Detalle del torso, ideal para mostrar vestuario o accesorios. Pose más dinámica.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.halfbody.feat1">Sombreado completo</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.halfbody.feat2">Dimensiones Verticales</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.halfbody.feat3">1 Revisión de Color</span></li>
+                            </ul>
+                            <a href="https://wa.me/+584165227711" class="order-button">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-translate="pricing.order">¡Encargar!</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Ref Sheet -->
+                    <div class="col">
+                        <div class="pricing-card">
+                            <h3 data-translate="pricing.refsheet.name">Hoja de Referencia</h3>
+                            <div class="price">$85</div>
+                            <p class="description" data-translate="pricing.refsheet.desc">
+                                Incluye vista frontal y dorsal del personaje, paleta de colores y detalles clave.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.refsheet.feat1">Diseño completo del personaje</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.refsheet.feat2">Uso de paleta de colores</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.refsheet.feat3">Base para futuros encargos</span></li>
+                            </ul>
+                            <a href="https://wa.me/+584165227711" class="order-button">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-translate="pricing.order">¡Encargar!</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Full Body -->
+                    <div class="col">
+                        <div class="pricing-card">
+                            <h3 data-translate="pricing.fullbody.name">Cuerpo Completo</h3>
+                            <div class="price">$120</div>
+                            <p class="description" data-translate="pricing.fullbody.desc">
+                                La máxima calidad. Ilustración de cuerpo entero con pose compleja y detalles finos.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.fullbody.feat1">Detalles de iluminación avanzada</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.fullbody.feat2">Pose dinámica</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.fullbody.feat3">Uso de texturas</span></li>
+                            </ul>
+                            <a href="https://wa.me/+584165227711" class="order-button">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-translate="pricing.order">¡Encargar!</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sketch -->
+                    <div class="col">
+                        <div class="pricing-card">
+                            <h3 data-translate="pricing.sketch.name">Sketch Rápido</h3>
+                            <div class="price">$20</div>
+                            <p class="description" data-translate="pricing.sketch.desc">
+                                Opción sencilla para ver tu personaje en mi estilo antes de un encargo mayor.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.sketch.feat1">Solo Lineart (Sin color)</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.sketch.feat2">Entrega rápida</span></li>
+                                <li><i class="fas fa-check-circle"></i><span data-translate="pricing.sketch.feat3">Uso personal</span></li>
+                            </ul>
+                            <a href="https://wa.me/+584165227711" class="order-button">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-translate="pricing.order">¡Encargar!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extras -->
+                <div class="extras-section">
+                    <h4 data-translate="pricing.extras.title">Adicionales y Extras</h4>
+                    <p class="text-secondary" data-translate="pricing.extras.desc">
+                        Personaje extra: +50% del precio base. | Fondo detallado/complejo: +$20 a $50 USD (depende de la complejidad).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section" id="proceso">
+            <div class="container">
+                <h2 class="section-title" data-translate="process.title">Proceso de Encargo y TdC</h2>
+                
+                <div class="modern-tabs">
+                    <button class="active" onclick="showTab('process')" data-translate="process.tab1">El Proceso</button>
+                    <button onclick="showTab('terms')" data-translate="process.tab2">Términos (TdC)</button>
+                </div>
+
+                <div class="tab-content-box" id="processContent">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h5 data-translate="process.step1.title">Consulta</h5>
+                            <p data-translate="process.step1.desc">Envía un DM o correo con tu idea y referencias.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h5 data-translate="process.step2.title">Pago</h5>
+                            <p data-translate="process.step2.desc">Se requiere el 50% por adelantado vía PayPal o Zinli.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h5 data-translate="process.step3.title">Boceto y Revisión</h5>
+                            <p data-translate="process.step3.desc">Te envío el boceto para tu aprobación. (1 revisión incluida).</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h5 data-translate="process.step4.title">Entrega</h5>
+                            <p data-translate="process.step4.desc">Recibes tu arte final en alta resolución por email en tiempo acordado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content-box" id="termsContent" style="display: none;">
+                    <div class="process-step">
+                        <div class="step-number"><i class="fas fa-shield-alt"></i></div>
+                        <div class="step-content">
+                            <h5 data-translate="terms.rights.title">Derechos de Uso</h5>
+                            <p data-translate="terms.rights.desc">Todas las comisiones son para uso estrictamente PERSONAL, a menos que se negocie una tarifa comercial.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number"><i class="fas fa-undo"></i></div>
+                        <div class="step-content">
+                            <h5 data-translate="terms.refunds.title">Reembolsos</h5>
+                            <p data-translate="terms.refunds.desc">Solo se ofrecen reembolsos completos si el trabajo no ha comenzado (no se hacen reembolsos después de la aprobación del boceto).</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number"><i class="fas fa-clock"></i></div>
+                        <div class="step-content">
+                            <h5 data-translate="terms.time.title">Tiempo de Espera</h5>
+                            <p data-translate="terms.time.desc">El tiempo de entrega puede variar dependiendo de la complejidad y mi lista de espera.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <h4 data-translate="footer.title">¡Hablemos de tu próximo personaje!</h4>
+                <a href="mailto:camaco81@example.com" class="cta-button">
+                    <i class="fas fa-envelope"></i>
+                    <span data-translate="footer.email">Enviar Correo</span>
+                </a>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com/camaco81" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/+584165227711" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                
+                <p class="text-secondary">&copy; 2025 Marco Camacho. <span data-translate="footer.copyright">Ilustrador Digital</span>.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
